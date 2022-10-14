@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.header{
+  background-image: linear-gradient(rgba(0,0,20,0.8), rgba(0,0,20,0.8)), url('tof.png');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 220vh;
+}
+
+.start{
+position: relative;
+padding: 10px 10px;
+font-size: 20px;
+
+
+}
+
+.start a{
+  width: 60px;
+  position: fixed;
+  margin: 20px;
+  opacity: 0;
+}
+.start h1{
+  font-size: 50px;
+  text-align: center;
+  color:white;
+  margin: 10px;
+}
+.start p{
+  font-size: 20px;
+  padding: 10px 10px;
+  margin: 5px;
+  color:#E5E4E2;
+  text-align: left;
+}
+.n2{
+  background: #fff;
+  position: absolute;
+  width: 90%;
+  height: 10%;
+  top: 40%;
+  left: 10%;
+  opacity: 0%;  
+}
+
+.start h2{
+  font-size: 20px;
+  padding: 10px 10px;
+  margin: 5px;
+  color: white;
+  text-align: left; 
+  border-left: 6px solid red;
+  background: rgba(0,0,53, 0.8);
+  cursor: pointer;
+}
+.middle{
+position: relative;
+padding: 10px 10px;
+font-size: 20px;
+}
+.middle h2{
+  font-size: 20px;
+  padding: 10px 10px;
+  margin: 5px;
+  color: white;
+  text-align: left
+}
+.middle p{
+  font-size: 20px;
+  padding: 10px 10px;
+  margin: 10px;
+  color:#E5E4E2;
+  text-align: left;
+  border-left: 6px solid cyan;
+  background: rgba(0,0,53, 0.8);
+}
+.news2:hover {
+  background-color: black;
+  color: white;
+  border-left: 6px solid white;
+}
+.news1:hover {
+  background-color: black;
+  color: white;
+  border-left: 6px solid white;
+}
+.end{
+position: relative;
+padding: 10px 10px;
+font-size: 20px;
+text-align: center;
+
+}
+.end h3{
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+.end img{
+  padding: 0px 32px;
+  margin: 12px 10px;
+  transition-duration: 0.4s;
+  width: 40%;
+  max-width: 100px;
+  background-color: #7289da;
+  border-radius: 20px;
+}
+
+.discord:hover {
+  background-color: black;
+  color: white;
+}

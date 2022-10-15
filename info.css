@@ -3,9 +3,10 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 .header{
-  min-height: 220vh;
+  min-height: 320vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -41,12 +42,50 @@ background-color: transparent;
 } 
 .text{
   position: absolute;
-  top: 40%;
+  top: 25%;
   text-align: left;
   font-size: 25px;
-  margin: 35px;
+	margin: 35px;
   width: 90%;
   color: white;
   background: transparent;
-  display: flex;
+  display: block;
+	z-index: 4;
+}
+.skill{
+  position: absolute;
+	top: 44%;
+	left: 2%;
+}
+.column {
+  float: down;
+  width: 90%;
+	padding: 5px;
+	margin: 10px;
+  border-left: 6px solid cyan;
+	background: white;
+	transition: 0.5s;
+  opacity: 70%;
+	cursor: none;
+
+}
+.column:hover{
+	background: black;
+	border-left: 6px solid mediumpurple;
+
+}
+
+.column p{
+	font-size: 20px;
+  color: white;
+  transition: 0.5s;
+
+}
+.column p:hover{
+  color: mediumpurple;
+}
+.row:after {
+  content: "";
+  display: table;
+   clear: both;
 }

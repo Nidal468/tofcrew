@@ -25,13 +25,13 @@ background-color: transparent;
   font-size: 30px;
   color: white;
   text-align: left;
-  margin: 10px;
+  margin: 5px;
 }
 .box h2{
   font-size: 20px;
-  color: #D7A1F9;
+  color: white;
   text-align: left;
-  margin: 10px;
+  margin: 5px;
 }
 
 .box img{
@@ -42,9 +42,9 @@ background-color: transparent;
 } 
 .text{
   position: absolute;
-  top: 25%;
+  top: 400px;
   text-align: left;
-  font-size: 25px;
+  font-size: 15px;
 	margin: 35px;
   width: 90%;
   color: white;
@@ -54,15 +54,15 @@ background-color: transparent;
 }
 .skill{
   position: absolute;
-	top: 44%;
+	top: 550px;
 	left: 2%;
 }
 .column {
   float: down;
   width: 90%;
-	padding: 5px;
+	padding: 15px;
 	margin: 10px;
-  border-left: 6px solid cyan;
+  border-left: 6px solid red;
 	background: white;
 	transition: 0.5s;
   opacity: 70%;
@@ -71,18 +71,15 @@ background-color: transparent;
 }
 .column:hover{
 	background: black;
-	border-left: 6px solid mediumpurple;
+	border-left: 6px solid cyan;
 
 }
 
 .column p{
-	font-size: 20px;
+	font-size: 10px;
   color: white;
   transition: 0.5s;
 
-}
-.column p:hover{
-  color: mediumpurple;
 }
 .row:after {
   content: "";

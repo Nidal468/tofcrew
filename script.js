@@ -2,7 +2,7 @@ function menu() {
   document.getElementById("myslide" ).style.left= "0";
 }
 function myclose() {
-  document.getElementById("myslide").style.left = "-300px";
+  document.getElementById("myslide").style.left = "-2000px";
 }
 function panel() {
     document.getElementById("scroll").style.down = "35px";

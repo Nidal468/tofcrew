@@ -7,6 +7,7 @@
   <title>Fortitude</title>
   <link href="style.css" rel="stylesheet">
   <link href="slide.css" rel="stylesheet">
+	<link href="accordion.css" rel="stylesheet">
   <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
@@ -35,23 +36,28 @@
          </div>
       <div class= "start">
         
-        <h1>Welcome to Fortitude! </h1>
-        <p>This is a website made for both global and cn version of tower of fantasy. So if you need any info or tips on tower of fantasy then this is best website for you.You can also apply to join our tower of fantasy crew which is only for players from florione server. In this website you can find guides on every kinds of weapons, matric explanation, guide on how to farm, cn news etc</p><h2 class= "news" id= "news1" onclick= "news()">You can check the news below to see latest updates for global and cn version</h2>
-      </div>
-      <div class= "middle">
-        <h2>Latest News</h2>
-        <p class= "news2">New upcoming tower of fantasy 2.3 trailer</p>
-         <a class="n2" href="n2.html">link</a>
-        <p class= "news1">Vera released date confirmed!</p>
-      </div>
-      <div class= "end">
-        <h3>You can join our discord by tapping the button below</h3>
-  <div>
-    <a href= "https://discord.gg/RPAHhwHg"><img class= "discord" src= "discord.png""></a>
-        
-  </div>
-      </div>
-    </section>   
+        <h1>Welcome to Fortitude</h1>
+        <p class= "info">This is a website made for both global and cn version of tower of fantasy. So if you need any info or tips on tower of fantasy then this is best website for you.You can also apply to join our tower of fantasy crew which is only for players from florione server. In this website you can find guides on every kinds of weapons, matric explanation, guide on how to farm, cn news etc</p>
+    <a href= "https://discord.gg/RPAHhwHg" class= "discord"><img  src= "discord.png"></a>
+			<ul class= "accordion">
+		<li>
+			<input type= "radio" name= "accordion" id= "first">
+				<label for= "first" onclick= "playclick()">Website Update</label>
+			<div class= "content">
+				<p>New Simulacra Alyss has been added to Simulacra.</p>
+			</div>
+		</li>
+				<li>
+			<input type= "radio" name= "accordion" id= "second">
+				<label for= "second" onclick= "playclick()">2.0 Global release</label>
+			<div class= "content">
+				<p>Tower of fantasy 2.0 is going to be released on 20th October with lots of new content! </p>
+			</div>
+				</li>
+			</ul>
+			</div>
+    </section> 
+	<audio src="click.wav" id="audio1"></audio>
 </body>
 
 </html>

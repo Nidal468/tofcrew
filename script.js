@@ -15,4 +15,6 @@ function passive() {
 function star1() {
     document.getElementById("1 star").style.display = "block";
 }
-   
+function playclick(){
+       document.getElementById("audio1").play();  
+} 

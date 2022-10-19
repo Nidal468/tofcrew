@@ -7,12 +7,13 @@
 }
 .accordion li{
 	list-style: none;
+	border-right: 4px solid lightblue;
 	width: 100%;
 	margin: 20px 0px;
   padding: 10px;
   border-radius: 8px;
   background: white;
-	
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
 } 
 .accordion li label{
 	display: flex;
@@ -22,6 +23,7 @@
   font-weight: 500;
 	cursor: none;
 	color: black;
+	
 }
 label::before{
 	content: '+';

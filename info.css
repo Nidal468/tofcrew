@@ -14,75 +14,73 @@
   background-attachment: fixed;
 }
 .box{
-background-color: transparent;
-  display: block;
-  margin: 40px;
-  position: absolute;
-  font-size: 20px;
+  position: relative;
+	padding: 30px;
 
 }
 .box h1{
   font-size: 30px;
-  color: white;
+  color: black;
   text-align: left;
-  margin: 5px;
+  margin: 15px 0px;
+
 }
 .box h2{
   font-size: 20px;
-  color: white;
+  color: black;
   text-align: left;
-  margin: 5px;
+	margin: 10px 0px;
 }
 
 .box img{
   display: block;
-  width: 70%;
+  width: 90%;
   position: relative;
   cursor: none;
+	margin: 15px 0px;
 } 
 .text{
-  position: absolute;
-  top: 400px;
-  text-align: left;
+  position: relative;
+  top: 40%;
   font-size: 15px;
-	margin: 35px;
-  width: 90%;
-  color: white;
-  background: transparent;
-  display: block;
+  background: white;
 	z-index: 4;
-}
-.skill{
-  position: absolute;
-	top: 550px;
-	left: 2%;
-}
-.column {
-  float: down;
-  width: 90%;
 	padding: 15px;
-	margin: 10px;
-  border-left: 6px solid red;
-	background: white;
-	transition: 0.5s;
-  opacity: 70%;
+  font-weight: 500;
 	cursor: none;
-
+	color: #555;
+	list-style: none;
+	width: 90%;
+  border-radius: 8px;
+	display: flex;
+	align-items: center;
+	margin: 15px 0px;
 }
-.column:hover{
-	background: black;
-	border-left: 6px solid cyan;
-
+.header1{
+	color: black;			 
+  position: relative;
+  font-size: 40px;
+  font-weight: 500;
+	margin: 15px 0px;
 }
-
-.column p{
-	font-size: 10px;
-  color: white;
-  transition: 0.5s;
-
+@media only screen and (max-width: 600px){
+.box{
+		padding: 20px 10px;
+	}
+.box h1{
+  font-size: 15px;
+  margin: 5px 0px;
 }
-.row:after {
-  content: "";
-  display: table;
-   clear: both;
+.box h2{
+  font-size: 10px;
+	margin: 5px 0px;
+}
+.text{
+  font-size: 10px;
+  margin: 10px 0px;
+}
+.header1{
+  font-size: 20px;
+  font-weight: 500;
+}
 }

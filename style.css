@@ -6,62 +6,11 @@
 	box-sizing: border-box;
 }
 
-.header{
-  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('tof.png');
-  width: 100%;
+body{
+  background-image: url('tof.png');
   background-size: cover;
   background-position: center;
-  position: relative;
-  min-height: 220vh;
-}
-
-.start{
-  position: relative;
-	padding: 30px;
-
+  min-height: 170vh;
 }
 
 
-.start h1{
-  font-size: 30px;
-  text-align: left;
-  color: white;
-  margin: 20px 10px;
-}
-.info{
-  position: relative;
-  top: 40%;
-  font-size: 15px;
-  background: white;
-	z-index: 2;
-	padding: 15px;
-  font-weight: 500;
-	cursor: none;
-	color: #555;
-	list-style: none;
-	width: 90%;
-  border-radius: 8px;
-	border-right: 4px solid #FF2E2E;
-	border-left: 4px solid #FF2E2E;
-	display: flex;
-	align-items: center;
-	margin: 15px 0px;
-}
-
-
-.start a img{
-  padding: 0px 30px;
-  margin: 12px 10px;
-  transition-duration: 0.4s;
-  width: 5%;
-  background-color: #7289da;
-  border-radius: 15px;
-	position: relative;
-	left: 40%;
-	
-}
-
-.discord:hover {
-  background-color: black;
-  color: white;
-}

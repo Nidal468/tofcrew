@@ -4,6 +4,7 @@
   width: 90%;
 	position: relative;
 	font-size: 20px;
+	
 }
 .accordion li{
 	list-style: none;
@@ -23,6 +24,7 @@
   font-weight: 500;
 	cursor: none;
 	color: black;
+	cursor: pointer;
 	
 }
 label::before{
@@ -37,10 +39,11 @@ label::before{
 .accordion .content{
 	color: #555;
 	padding: 0 10px;
-  line-heigth: 26px;
+  line-height: 25px;
 	max-height: 0;
 	overflow: hidden;
   transition: max-height 0.5s, padding 0.5s;
+	cursor: pointer;
 }
 .accordion input[type= "radio"]:checked + label + .content{
 	max-height: 400px;

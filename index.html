@@ -13,12 +13,13 @@
 	<body>
 		<div class="menu-bar">
 			<ul>
-				<li><a href="">FORTITUDE</a>
-					<div class="sub-menu-1"> 
-						<ul>
-							<li><a>Join Us</a></li>
-							<li><a>Members</a></li>
-							<li><a>Tasks</a></li>
+					<div id="select"> 
+						<p id="selectText" >FORTITUDE</p>
+						<ul id="list">
+							<li class="options"><a href="">FORTITUDE</a></li>
+							<li class="options"><a href="" >JOIN US</a></li>
+							<li class="options"><a  href="">MEMBERS</a></li>
+							<li class="options"><a href="">TASKS</a></li>
 						</ul>
 					</div>
 				</li>
@@ -28,6 +29,21 @@
 				<li><a href="">CONTACT</a></li>
 			</ul>
 		</div>
+		<script>
+		    let select = document.getElementById("select");
+	select.onclick = function(){
+		list.classList.toggle("open");
+	}
+	 
+	let list = document.getElementById("list");
+			 let selectText = document.getElementById("selectText"); 
+			 let options = document.getElementsByClassName("options");
+			 for(option of options){
+	option.onclick = function(){
+		selectText.innerHTML = this.innerHTML;
+	} 
+} 	
+		 </script>
 	</body>
 
 

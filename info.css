@@ -25,14 +25,13 @@
   position: relative;
   cursor: pointer;
 	margin: 15px 0px;
-	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+	
 } 
 .text{
   position: relative;
   top: 40%;
   font-size: 15px;
   background: white;
-	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
 	z-index: 4;
 	padding: 15px;
   font-weight: 500;
@@ -40,12 +39,25 @@
 	color: #555;
 	list-style: none;
 	width: 90%;
-  border-radius: 8px;
-	border-bottom: 4px solid lightblue;
+	border-right: 4px solid lightblue;
 	display: flex;
 	align-items: center;
 	margin: 15px 0px;
+	border-radius: 4px;
+	
 }
+h3{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	border-left: 4px solid red;
+	font-size: 30px;
+	padding: 10px;
+	font-weight: 600;
+	
+	
+}
+
 @media only screen and (max-width: 600px){
 .box{
 		padding: 20px 10px;

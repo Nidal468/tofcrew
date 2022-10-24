@@ -6,44 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale = 1.0 "> 
   <title>Fortitude</title>
   <link href="style.css" rel="stylesheet">
-  <link href="menu.css" rel="stylesheet">
+  <link href="menu-button.css" rel="stylesheet">
   <script type="text/javascript" src="script.js"></script>
+	<script src="https://kit.fontawesome.com/5517894d20.js"></script>
 </head>
-
 	<body>
-		<div class="menu-bar">
-			<ul>
-					<div id="select"> 
-						<p id="selectText" >FORTITUDE</p>
-						<ul id="list">
-							<li class="options"><a href="">FORTITUDE</a></li>
-							<li class="options"><a href="" >JOIN US</a></li>
-							<li class="options"><a  href="">MEMBERS</a></li>
-							<li class="options"><a href="">TASKS</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="simulacra.html">SIMULACRA</a></li>
-				<li><a href="">MATRICES</a></li>
-				<li><a href="">GUIDE</a></li>
-				<li><a href="">CONTACT</a></li>
+		<div class="hero" id="light">
+			<nav>
+				<img src="title.png" class="title"/>
+			<ul id="bar">
+			   <li><a href="">Fortitude</a></li>
+				 <li><a href="">Members</a></li>
+				<li><a href="">Daily Task</a></li>
+				<li><a href="">Guides</a></li>
 			</ul>
-		</div>
+			 <div>
+			   <button type="button" onclick="togglebtn()" id="btn"><span></span></button> 
+			 </div>
+			 
+			</nav>
+			<div class="text-container" id="text">
+			   <h1>
+			      Welcome To Fortitude
+			   </h1>
+			   <p>
+			      This is the official website of the Crew Fortitude from Florione server but others are also welcomed here.
+			   </p>
+			   <a href="">Discord Server</a>
+			</div>
+		
 		<script>
-		    let select = document.getElementById("select");
-	select.onclick = function(){
-		list.classList.toggle("open");
-	}
-	 
-	let list = document.getElementById("list");
-			 let selectText = document.getElementById("selectText"); 
-			 let options = document.getElementsByClassName("options");
-			 for(option of options){
-	option.onclick = function(){
-		selectText.innerHTML = this.innerHTML;
-	} 
-} 	
-		 </script>
+		  var btn =document.getElementById("btn");
+			var light =document.getElementById("light");
+			var bar =document.getElementById("bar");
+			var text =document.getElementById("text");
+			function togglebtn(){
+		btn.classList.toggle("active");
+		light.classList.toggle("on");
+		bar.classList.toggle("bar-on");
+	  text.classList.toggle("text-on");
+			}
+		</script>
+		
 	</body>
 
 

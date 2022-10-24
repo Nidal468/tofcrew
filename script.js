@@ -1,7 +1,7 @@
 function menu() {
   document.getElementById("myslide" ).style.left= "0";
 }
-function myclose() {
+function close() {
   document.getElementById("myslide").style.left = "-2000px";
 }
 function panel() {

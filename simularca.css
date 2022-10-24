@@ -24,22 +24,35 @@ background-color: transparent;
 }
 .box h1{
   font-size: 30px;
-  color: #B1D4E0;
+  color: #fff;
   text-align: left;
   margin: 10px 10px 20px 10px;
+	border-left: 4px solid red;
+	padding: 10px;
+	display: block;
+	cursor: pointer;	
 } 
+
 .box p{
   font-size: 20px;
-  color: white;
+  color: #555;
   text-align: left;
   margin: 15px 10px;
   width: 90%;
+	background: #e3edf7;
+	border-left: 4px solid red;
+	padding: 10px;
+  
+	
 }
 .box h2{
   font-size: 30px;
   color: white;
   margin: 20px 10px;
   text-align: left;
+	border-left: 4px solid red;
+	padding: 10px;
+	
 }
 
 .box img{
@@ -47,7 +60,7 @@ background-color: transparent;
   width: 5%;
 	max-width: 60px;
 	min-width: 50px;
-  border: 2px solid gold;
+  border: 2px solid lightblue;
   position: relative;
   opacity: 100%;
   margin: 10px;

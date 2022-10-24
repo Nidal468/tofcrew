@@ -1,0 +1,111 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	
+}
+.slide-bar{
+	background: rgba(255,255,255,0.1);
+	backdrop-filter: blur(15px);
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	overflow-y: auto;
+	transition: left 0.6s ease;
+	
+	
+}
+.slide-bar.active{
+	left: 0;
+	
+} 
+.slide-bar ul{
+	width: 100%;
+	margin-top: 50px;
+	
+}
+.slide-bar ul li{
+	position: relative;
+	cursor: pointer;
+	
+}
+.slide-bar ul li a{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	display: block;
+	text-decoration: none;
+	padding: 5px 30px;
+	line-height: 40px;
+	
+}
+.slide-bar ul li a i{
+	margin-right: 15px;
+	
+}
+.slide-bar ul li a:hover{
+	background: #171717;
+	transition: 0.3s ease;
+	
+}
+.sub-menu{
+	background: rgba(255,255,255,0.1);
+	
+}
+.sub-menu ul li a{
+	padding-left: 80px;
+	
+}
+.close-btn{
+	position: absolute;
+	color: #fff;
+	right: 0;
+	margin: 25px;
+	cursor: pointer;
+	
+}
+.menu-btn{
+	position: absolute;
+	color: #fff;
+	font-size: 20px;
+	margin: 25px;
+	cursor: pointer;
+	
+}
+.on .menu-btn{
+	color: black;
+}
+.on .close-btn{
+	color: black;
+	
+} 
+.on .slide-bar ul li a:hover{
+	background: black;
+	
+}
+.on .slide-bar{
+	background: #171717;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

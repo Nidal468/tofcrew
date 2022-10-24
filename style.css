@@ -18,7 +18,7 @@ body{
 nav{
 	display: flex;
 	align-items: center;
-	padding: 20px 4%;
+	padding: 20px 6%;
 	
 }
 nav .title{
@@ -101,39 +101,6 @@ button span{
 	margin-left: 5px;
 	transition: background 1s, margin-left 1s;
 }
-.menu-bar{
-	background: #e3edf7;
-	width: auto;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: -500px;
-	transition: left 1s;
-	
-	
-}
-.menu-bar h2{
-	padding-top: 20px;
-	margin-left: 20px;
-	color: black;
-	font-size: 20px;
-	font-weight: 500;	
-} 
-.menu-bar ul{
-	margin-left: 10px;
-	padding: 20px;
-	list-style: none;
-}
-.menu-bar ul li{
-	padding: 5px 0px;
-}
-.menu-bar ul li a{
-	color: black;
-	text-decoration: none;
-	font-size: 15px;
-	font-weight: 500;
-	
-}
 .active{
 	background: black;
 	
@@ -172,7 +139,10 @@ button span{
 	border-radius: 30px;
 	padding: 5px 10px;
 }
+@media screen and (max-width: 600px){
 
+
+}
 
 
 

@@ -7,56 +7,93 @@
   <title>Fortitude</title>
   <link href="style.css" rel="stylesheet">
   <link href="menu-button.css" rel="stylesheet">
-  <script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="slide-menu.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+	</script>
 	<script src="https://kit.fontawesome.com/5517894d20.js"></script>
 </head>
 	<body>
 		<div class="hero" id="light">
+		<div class="menu-btn">
+	   <i class="fas fa-bars"></i>
+	</div>
+	
+   <div class="slide-bar">
+		 <div class="close-btn"><i class="fas fa-times"></i></div>
+		 
+      <ul>
+				<li class="sub-btn"><a><i class="fa-solid fa-user"></i>Simulacra</a></li>
+				<div class="sub-menu">
+				   <ul>
+				      <li><a href=""><i class="fa-solid fa-gun"></i>Weapon</a></li>
+						 <li><a href=""><i class="fa-solid fa-sd-card"></i>Matrices</a></li>
+						 <li><a href=""><i class="fa-solid fa-dna"></i>Trait</a></li>
+				   </ul>
+				   
+				</div>
+				
+				<li><a href=""><i class="fa-brands fa-guilded"></i>Guide</a></li>
+				<li class="sub-btn"><a><i class="fa-solid fa-shield-halved"></i>Fortitude</a></li>
+				<div class="sub-menu">
+				   <ul>
+				      <li><a href=""><i class="fa-solid fa-users"></i>Members</a></li>
+						 <li><a href=""><i class="fa-solid fa-bars-progress"></i>Tasks</a></li>
+						 <li><a href=""><i class="fa-solid fa-user-shield"></i>Join</a></li>
+				   </ul>
+				   
+				</div>
+				<li><a href=""><i class="fa-solid fa-gears"></i>settings</a></li>
+				<li><a href=""><i class="fa-regular fa-id-badge"></i>About</a></li>
+			</ul>
+      
+	 </div>
 			<nav>
 				<img src="title.png" class="title"/>
-			<ul id="bar">
-			   <li><a href="">Fortitude</a></li>
-				 <li><a href="">Members</a></li>
-				<li><a href="">Daily Task</a></li>
-				<li><a href="">Guides</a></li>
-			</ul>
-			 <div>
-			   <button type="button" onclick="togglebtn()" id="btn"><span></span></button> 
-			 </div>
-			 
+				<ul id="bar">
+					<li><a href="">Fortitude</a></li>
+					<li><a href="">Members</a></li>
+					<li><a href="">Daily Task</a></li>
+					<li><a href="">Guides</a></li>
+				</ul>
+				<div>
+					<button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+				</div>
 			</nav>
 			<div class="text-container" id="text">
-			   <h1>
-			      Welcome To Fortitude
-			   </h1>
-			   <p>
-			      This is the official website of the Crew Fortitude from Florione server but others are also welcomed here.
-			   </p>
-			   <a href="">Discord Server</a>
+				<h1>
+					Welcome To Fortitude
+				</h1>
+				<p>This is the official website of the Crew Fortitude from Florione server but others are also welcomed here.</p>
+				<a href="https://discord.gg/UnxXpZEm">Discord Server</a>
 			</div>
-		
-		<script>
-		  var btn =document.getElementById("btn");
-			var light =document.getElementById("light");
-			var bar =document.getElementById("bar");
-			var text =document.getElementById("text");
-			function togglebtn(){
-		btn.classList.toggle("active");
-		light.classList.toggle("on");
-		bar.classList.toggle("bar-on");
-	  text.classList.toggle("text-on");
-			}
-		</script>
-		
+			<script>
+				var btn =document.getElementById("btn");
+				var light =document.getElementById("light");
+				var bar =document.getElementById("bar");
+				var text =document.getElementById("text");
+				function togglebtn(){
+					btn.classList.toggle("active");
+light.classList.toggle("on");
+bar.classList.toggle("bar-on");
+text.classList.toggle("text-on");
+				}
+			</script>
+			<script>
+	  $(document).ready(function(){
+		$('.sub-btn').click(function(){
+		$(this).next('.sub-menu').slideToggle();
+		});
+		$('.menu-btn').click(function(){
+			$('.slide-bar').addClass('active');
+			$('.menu-btn').css("visibility", "hidden") 
+			});
+			$('.close-btn').click(function(){
+			$('.slide-bar').removeClass('active');
+			$('.menu-btn').css("visibility", "visible") 
+			});
+		});
+			</script>
 	</body>
-
-
-
-
-
-
-
-
 
 
 

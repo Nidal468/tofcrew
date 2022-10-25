@@ -5,19 +5,20 @@
 	box-sizing: border-box;
 	
 }
+
 .slide-bar{
 	background: rgba(255,255,255,0.1);
 	backdrop-filter: blur(15px);
-	width: 250px;
+	width: 280px;
 	height: 100%;
 	position: fixed;
 	top: 0;
 	left: -100%;
 	overflow-y: auto;
 	transition: left 0.6s ease;
-	
-	
+	z-index: 8;	
 }
+
 .slide-bar.active{
 	left: 0;
 	
@@ -44,7 +45,7 @@
 }
 .slide-bar ul li a i{
 	margin-right: 15px;
-	
+	margin-left: 15px;
 }
 .slide-bar ul li a:hover{
 	background: #171717;
@@ -57,6 +58,32 @@
 }
 .sub-menu ul li a{
 	padding-left: 80px;
+	
+}
+button{
+	background: #efefef;
+	height: 30px;
+	width: 60px;
+	border-radius: 20px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	transition: background 1s;
+}
+button span{
+	display: block;
+	background: #444;
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+	margin-left: 5px;
+	transition: background 1s, margin-left 1s;
+}
+
+.active span{
+	background: #fff;
+	margin-left: 31px;
+	
 	
 }
 .close-btn{
@@ -75,11 +102,42 @@
 	cursor: pointer;
 	
 }
+nav{
+	display: flex;
+	align-items: center;
+	padding: 20px 6%;
+	
+}
+nav .title{
+	width: 120px;
+	cursor: pointer;
+	transition: background 1s, padding 1s, border-redius 1s;
+	
+}
+
+nav ul{
+	flex: 1;
+	text-align: right;
+	
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+  
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	transition: color 1s;	
+}
 .on .menu-btn{
 	color: black;
 }
 .on .close-btn{
-	color: black;
+	color: #fff;
 	
 } 
 .on .slide-bar ul li a:hover{
@@ -89,8 +147,14 @@
 .on .slide-bar{
 	background: #171717;
 }
-
-
+.on .title{
+	background: black;
+	border-radius: 30px;
+	padding: 5px 10px;
+}
+.bar-on li a{
+	color: #555;
+}
 
 
 

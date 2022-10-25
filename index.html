@@ -14,6 +14,7 @@
 </head>
 	<body>
 		<div class="hero" id="light">
+			<!--html for the side menu-->
 		<div class="menu-btn">
 	   <i class="fas fa-bars"></i>
 	</div>
@@ -22,10 +23,10 @@
 		 <div class="close-btn"><i class="fas fa-times"></i></div>
 		 
       <ul>
-				<li class="sub-btn"><a><i class="fa-solid fa-user"></i>Simulacra</a></li>
+				<li class="sub-btn"><a><i class="fa-solid fa-user"></i>Simulacra<i class="fa-solid fa-caret-down"></i></a></li>
 				<div class="sub-menu">
 				   <ul>
-				      <li><a href=""><i class="fa-solid fa-gun"></i>Weapon</a></li>
+				      <li><a href="simulacra.html"><i class="fa-solid fa-gun"></i>Weapon</a></li>
 						 <li><a href=""><i class="fa-solid fa-sd-card"></i>Matrices</a></li>
 						 <li><a href=""><i class="fa-solid fa-dna"></i>Trait</a></li>
 				   </ul>
@@ -33,7 +34,7 @@
 				</div>
 				
 				<li><a href=""><i class="fa-brands fa-guilded"></i>Guide</a></li>
-				<li class="sub-btn"><a><i class="fa-solid fa-shield-halved"></i>Fortitude</a></li>
+				<li class="sub-btn"><a><i class="fa-solid fa-shield-halved"></i>Fortitude<i class="fa-solid fa-caret-down"></i></a></li>
 				<div class="sub-menu">
 				   <ul>
 				      <li><a href=""><i class="fa-solid fa-users"></i>Members</a></li>
@@ -47,6 +48,7 @@
 			</ul>
       
 	 </div>
+			<!--below is the html for the top-right nav bar-->
 			<nav>
 				<img src="title.png" class="title"/>
 				<ul id="bar">
@@ -56,6 +58,7 @@
 					<li><a href="">Guides</a></li>
 				</ul>
 				<div>
+					<!--html of the button for dark and light mode-->
 					<button type="button" onclick="togglebtn()" id="btn"><span></span></button>
 				</div>
 			</nav>
@@ -66,6 +69,8 @@
 				<p>This is the official website of the Crew Fortitude from Florione server but others are also welcomed here.</p>
 				<a href="https://discord.gg/UnxXpZEm">Discord Server</a>
 			</div>
+		</div>
+		<!--below is the jquary function for dark mode and light mode-->
 			<script>
 				var btn =document.getElementById("btn");
 				var light =document.getElementById("light");
@@ -78,6 +83,7 @@ bar.classList.toggle("bar-on");
 text.classList.toggle("text-on");
 				}
 			</script>
+		<!--below is the function for menu open and close and also includes the visibility of menu-icon-->
 			<script>
 	  $(document).ready(function(){
 		$('.sub-btn').click(function(){

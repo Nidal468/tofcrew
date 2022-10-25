@@ -1,44 +1,100 @@
 <!DOCTYPE html>
-<html lang= "en-US">
+<html>
   <head>
     <meta charset= "utf-8">
     <meta name = "viewport" content= "width= device-width, initial-scale = 1.0">
     <title>Simulacra</title>
-    <link rel = "stylesheet" href = "simularca.css">
-		<link href="menu.css" rel="stylesheet">
+    <link rel = "stylesheet" href = "simulaca.css">
+	<link rel="stylesheet" href="slide-menu.css">
     <script type="text/javascript" src="script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+	</script>
+	<script src="https://kit.fontawesome.com/5517894d20.js"></script>
   </head>
-  <body>
-    <section class= "header" font-family= "Poppins">
-				<div class="menu-bar">
-			<ul>
-				<li><a href="index.html">FORTITUDE</a></li>
-				<li><a href="simulacra.html">SIMULACRA</a></li>
-				<li><a href="">MATRICES</a></li>
-				<li><a href="">GUIDE</a></li>
-				<li><a href="">CONTACT</a></li>
-			</ul>
+	<body>
+		<div class="hero" id="light">
+		<div class="menu-btn">
+	   <i class="fas fa-bars"></i>
+	</div>
+	
+   <div class="slide-bar">
+		 <div class="close-btn"><i class="fas fa-times"></i></div>
+		 
+      <ul>
+				<li class="sub-btn"><a><i class="fa-solid fa-user"></i>Simulacra<i class="fa-solid fa-caret-down"></i></a></li>
+				<div class="sub-menu">
+				   <ul>
+				      <li><a href="simulacra.html"><i class="fa-solid fa-gun"></i>Weapon</a></li>
+						 <li><a href=""><i class="fa-solid fa-sd-card"></i>Matrices</a></li>
+						 <li><a href=""><i class="fa-solid fa-dna"></i>Trait</a></li>
+				   </ul>
+				   
 				</div>
-			<div class= "box">
-        <div class= "text">
-        <h1>Simulacra</h1>
-        <p>Simulacra are basically a free skin which you get from weapons. They have different passive which can be obtained by giving them gifts <a style= "color: lightblue;">(we will talk about this later)</a> and don't worry you don't need to equip Simulacra to turn on their traits you can just turn them on and leave the Simulacra alone</p>
-        <h2><a style= "color: gold;">SSR</a> Simulacra</h2>
-        </div>
-        <div>
-          <a href= "alyssinfo.html"><img src= "alyssicon.png"></a>
-          <a href= "annainfo.html"><img src= "annabellaicon.png"></a>
-          <a href= "taininfo.html"><img src= "tian langicon.png"></a>
-          <a href= "lyrainfo.html"><img src= "lyraicon.png"></a>
-          <a href= "lininfo.html"><img src= "linicon.png"></a>
-          <a href= "sakiinfo.html"><img src= "sakiicon.png"></a>
-          <a href= "rubyinfo.html"><img src= "rubyicon.png"></a>
-        </div>
-      </div>
-      </div>
-    </section> 
+				
+				<li><a href=""><i class="fa-brands fa-guilded"></i>Guide</a></li>
+				<li class="sub-btn"><a><i class="fa-solid fa-shield-halved"></i>Fortitude<i class="fa-solid fa-caret-down"></i></a></li>
+				<div class="sub-menu">
+				   <ul>
+				      <li><a href=""><i class="fa-solid fa-users"></i>Members</a></li>
+						 <li><a href=""><i class="fa-solid fa-bars-progress"></i>Tasks</a></li>
+						 <li><a href=""><i class="fa-solid fa-user-shield"></i>Join</a></li>
+				   </ul>
+				   
+				</div>
+				<li><a href=""><i class="fa-solid fa-gears"></i>settings</a></li>
+				<li><a href=""><i class="fa-regular fa-id-badge"></i>About</a></li>
+			</ul>
+      
+	 </div>
+			<nav>
+				<img src="title.png" class="title"/>
+				<ul id="bar">
+					<li><a href="">Fortitude</a></li>
+					<li><a href="">Members</a></li>
+					<li><a href="">Daily Task</a></li>
+					<li><a href="">Guides</a></li>
+				</ul>
+				<div>
+					<button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+				</div>
+			</nav>
+		</div>
+		<!--end of basic needs-->
+
+
+
 		
-  </body>
+		<div>
+		   
+		</div>
+		
+			<script>
+				var btn=document.getElementById("btn");
+				var light=document.getElementById("light");
+				var bar=document.getElementById("bar");
+				function togglebtn(){
+btn.classList.toggle("active");
+light.classList.toggle("on");
+bar.classList.toggle("bar-on");
+				}
+			</script>
+			<script>
+	  $(document).ready(function(){
+		$('.sub-btn').click(function(){
+		$(this).next('.sub-menu').slideToggle();
+		});
+		$('.menu-btn').click(function(){
+			$('.slide-bar').addClass('active');
+			$('.menu-btn').css("visibility", "hidden") 
+			});
+			$('.close-btn').click(function(){
+			$('.slide-bar').removeClass('active');
+			$('.menu-btn').css("visibility", "visible") 
+			});
+		});
+			</script>
+	</body>
+  
 
 
 

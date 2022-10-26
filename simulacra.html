@@ -7,21 +7,22 @@
     <link rel = "stylesheet" href = "simulaca.css">
 	<link rel="stylesheet" href="slide-menu.css">
     <script type="text/javascript" src="script.js"></script>
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js">
 	</script>
 	<script src="https://kit.fontawesome.com/5517894d20.js"></script>
   </head>
 	<body>
 		<div class="hero" id="light">
-		<div class="menu-btn">
-	   <i class="fas fa-bars"></i>
+		<div onclick="play2()" class="menu-btn"><i 
+			 class="fas fa-bars"></i>
 	</div>
 	
    <div class="slide-bar">
-		 <div class="close-btn"><i class="fas fa-times"></i></div>
+		 <div onclick="play3()" class="close-btn"><i class="fas fa-times"></i></div>
 		 
       <ul>
-				<li class="sub-btn"><a><i class="fa-solid fa-user"></i>Simulacra<i class="fa-solid fa-caret-down"></i></a></li>
+				<li onclick="play2()" class="sub-btn"><a><i class="fa-solid fa-user"></i>Simulacra<i class="fa-solid fa-caret-down"></i></a></li>
 				<div class="sub-menu">
 				   <ul>
 				      <li><a href="simulacra.html"><i class="fa-solid fa-gun"></i>Weapon</a></li>
@@ -32,7 +33,7 @@
 				</div>
 				
 				<li><a href=""><i class="fa-brands fa-guilded"></i>Guide</a></li>
-				<li class="sub-btn"><a><i class="fa-solid fa-shield-halved"></i>Fortitude<i class="fa-solid fa-caret-down"></i></a></li>
+				<li onclick="play2()" class="sub-btn"><a><i class="fa-solid fa-shield-halved"></i>Fortitude<i class="fa-solid fa-caret-down"></i></a></li>
 				<div class="sub-menu">
 				   <ul>
 				      <li><a href=""><i class="fa-solid fa-users"></i>Members</a></li>
@@ -55,19 +56,57 @@
 					<li><a href="">Guides</a></li>
 				</ul>
 				<div>
-					<button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+					<button  type="button" onclick="togglebtn()" id="btn"><span onclick="play3()" ></span></button>
 				</div>
 			</nav>
-		</div>
 		<!--end of basic needs-->
 
 
 
 		
-		<div>
-		   
+		<div class="box-1">
+		  <img src="saki-header.png" />
+			<p>
+			   Simulacra are what you get from <a style="color: #D1B000;">Standard</a> and <a style="color: red;">Limited</a> Banner pull. There is 3 things that you get when you obtain a Simulacra. First is the weapon which you can use whenever you want then there is the skin which doesn't give any spacial attributes but it does make you look cool and last but not least there is the trait feature which will give you a spacial ability after reaching a certain friendship point with that Simulacra.<br><br>There are 4 different elements with an extra 5th element which we will explain later. 
+			</p>
+			<h1>
+			   <i style="color: #7EC8E3;" class="fi fi-rr-snowflake"></i>FROST UNIT</h1>
+			<p>
+			   Frost units are those Simulacra who are specialized in <span style="color: #7EC8E3;">Frost</span> element and some of them have <span style="color: #7EC8E3;">Ice Resonance</span> which you will later learn in Resonance Guide.
+			</p>
+			
+			<h3>
+			   <a style="color: gold;">SSR</a> UNIT
+			</h3>
 		</div>
-		
+			<div onmouseover="play()" onmouseout="stop()" class="row">
+				<div class="column" id="icon">
+    <img src="alyssicon.png">
+				</div>
+				<div class="column">
+    <img src="merylicon.png">
+				</div>
+				<div class="column">
+    <img src="sakiicon.png">
+				</div>
+				<div class="column">
+    <img src="tsubasaicon.png">
+				</div>
+				<div class="column">
+    <img src="cocoicon.png">
+				</div>
+</div>
+		</div>
+		<audio id="myaudio-1">
+	<source src="modern-technology-select.wav"></source>
+</audio>
+		<audio id="myaudio-2">
+			<source src="select-click.wav"></source>
+		</audio>
+		<audio id="myaudio-3">
+			<source src="plastic-bubble-click.wav"></source>
+		</audio>
+			
 			<script>
 				var btn=document.getElementById("btn");
 				var light=document.getElementById("light");
@@ -77,8 +116,6 @@ btn.classList.toggle("active");
 light.classList.toggle("on");
 bar.classList.toggle("bar-on");
 				}
-			</script>
-			<script>
 	  $(document).ready(function(){
 		$('.sub-btn').click(function(){
 		$(this).next('.sub-menu').slideToggle();
@@ -92,6 +129,31 @@ bar.classList.toggle("bar-on");
 			$('.menu-btn').css("visibility", "visible") 
 			});
 		});
+
+				function play(){
+					var audio = document.getElementById("myaudio-1");
+					if (audio.paused) {
+        audio.play();
+    }else{
+        audio.currentTime = 0
+    }
+};
+				function play2(){
+					var audio2 = document.getElementById("myaudio-2");
+					if (audio2.paused) {
+        audio2.play();
+    }else{
+        audio2.currentTime = 0
+    }
+};
+				function play3(){
+					var audio3 = document.getElementById("myaudio-3");
+					if (audio3.paused) {
+        audio3.play();
+    }else{
+        audio3.currentTime = 0
+    }
+};
 			</script>
 	</body>
   

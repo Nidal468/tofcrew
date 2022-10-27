@@ -84,6 +84,8 @@ text.classList.toggle("text-on");
 			</script>
 		<!--below is the function for menu open and close and also includes the visibility of menu-icon-->
 			<script>
+				$(document).ready(function() {
+    // all custom jQuery will go here
 	  $(document).ready(function(){
 		$('.sub-btn').click(function(){
 		$(this).next('.sub-menu').slideToggle();
@@ -97,6 +99,7 @@ text.classList.toggle("text-on");
 			$('.menu-btn').css("visibility", "visible") 
 			});
 		});
+					});
 			</script>
 	</body>
 

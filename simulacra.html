@@ -14,17 +14,14 @@
   </head>
 	<body>
 		<div class="hero" id="light">
-		<div onclick="play2()" class="menu-btn"><i 
-			 class="fas fa-bars"></i>
-	</div>
-	
-   <div class="slide-bar">
-		 <div onclick="play3()" class="close-btn"><i class="fas fa-times"></i></div>
-		 
-      <ul>
-				<li onclick="play2()" class="sub-btn"><a><i class="fa-solid fa-user"></i>Simulacra<i class="fa-solid fa-caret-down"></i></a></li>
-				<div class="sub-menu">
-				   <ul>
+		<div onclick="play2()" class="menu-btn"><i class="fas fa-bars"></i>
+		</div>
+			<div class="slide-bar">
+				<div onclick="play3()" class="close-btn"><i class="fas fa-times"></i></div>
+				<ul>
+					<li onclick="play2()" class="sub-btn"><a><i class="fa-solid fa-user"></i>Simulacra<i class="fa-solid fa-caret-down"></i></a></li>
+					<div class="sub-menu">
+						<ul>
 				      <li><a href="simulacra.html"><i class="fa-solid fa-gun"></i>Weapon</a></li>
 						 <li><a href=""><i class="fa-solid fa-sd-card"></i>Matrices</a></li>
 						 <li><a href=""><i class="fa-solid fa-dna"></i>Trait</a></li>
@@ -65,13 +62,15 @@
 
 		
 		<div class="box-1">
+			<!--page starts-->
 		  <img src="saki-header.png" />
 			<p id="simu-info">
 			   Simulacra are what you get from <a style="color: #D1B000;">Standard</a> and <a style="color: red;">Limited</a> Banner pull. There is 3 things that you get when you obtain a Simulacra. First is the weapon which you can use whenever you want then there is the skin which doesn't give any spacial attributes but it does make you look cool and last but not least there is the trait feature which will give you a spacial ability after reaching a certain friendship point with that Simulacra.<br><br>There are 4 different elements with an extra 5th element which we will explain later.
 			</p>
 		</div>
-			
-			<h1>
+			<!--icon section-->
+			<div class="icon">
+				<h1 id="h1-1">
 			   <i style="color: #7EC8E3;" class="fi fi-rr-snowflake"></i>FROST UNIT</h1>
 			<p id="ele-info">
 			   Frost units are those Simulacra who are specialized in <span style="color: #7EC8E3;">Frost</span> element and some of them have <span style="color: #7EC8E3;">Ice Resonance</span> which you will learn later in Resonance Guide.
@@ -97,10 +96,13 @@
 				<div class="column">
     <img src="cocoicon.png">
 				</div>
-				<div class="column">
+				</div>
+				<div onmouseover="play()" onmouseout="stop()" class="row">
+			  <div class="column">
     <img src="friggicon.png">
 			  </div>
 </div>
+				<!--frost-->
 			<h1>
 			   <i style="color: #E25822;" class="fi fi-rr-flame"></i>FLAME UNIT</h1>
 			<p style="border-left: 4px solid #D10000;" id="ele-info">
@@ -113,24 +115,27 @@
 		
 			<div onmouseover="play()" onmouseout="stop()" class="row">
 				<div class="column">
-    <img src="alyssicon.png">
+    <img src="annaicon.png">
 				</div>
 				<div class="column">
-    <img src="merylicon.png">
+    <img src="kingicon.png">
 				</div>
 				<div class="column">
-    <img src="sakiicon.png">
+    <img src="zeroicon.png">
 				</div>
 				<div class="column">
-    <img src="tsubasaicon.png">
+    <img src="cobalticon.png">
 				</div>
 				<div class="column">
-    <img src="cocoicon.png">
+    <img src="rubyicon.png">
 				</div>
+				</div>
+				<div onmouseover="play()" onmouseout="stop()" class="row">
 				<div class="column">
-    <img src="friggicon.png">
+    <img src="humaicon.png">
 			  </div>
-			</div>
+				</div>
+				<!--flame-->
 			<h1>
 			   <i style="color: #B24BF3;" class="fi fi-rr-bolt"></i>VOLT UNIT</h1>
 			<p style="border-left: 4px solid #B24BF3;" id="ele-info">
@@ -143,24 +148,19 @@
 		
 			<div onmouseover="play()" onmouseout="stop()" class="row">
 				<div class="column">
-    <img src="alyssicon.png">
+    <img src="tianicon.png">
 				</div>
 				<div class="column">
-    <img src="merylicon.png">
+    <img src="crowicon.png">
 				</div>
 				<div class="column">
-    <img src="sakiicon.png">
+    <img src="nemesisicon.png">
 				</div>
 				<div class="column">
-    <img src="tsubasaicon.png">
+    <img src="samiricon.png">
 				</div>
-				<div class="column">
-    <img src="cocoicon.png">
-				</div>
-				<div class="column">
-    <img src="friggicon.png">
-			  </div>
 </div>
+				<!--volt-->
 			<h1>
 			   <i style="color: #FAD02C;" class="fi fi-rr-sword"></i>PHYSICAL UNIT</h1>
 			<p style="border-left: 4px solid #FAD02C;" id="ele-info">
@@ -173,25 +173,33 @@
 		
 			<div onmouseover="play()" onmouseout="stop()" class="row">
 				<div class="column">
-    <img src="alyssicon.png">
+    <img src="lyraicon.png">
 				</div>
 				<div class="column">
-    <img src="merylicon.png">
+    <img src="claudiaicon.png">
 				</div>
 				<div class="column">
-    <img src="sakiicon.png">
+    <img src="shiroicon.png">
 				</div>
+			</div>
+				<!--physical-->
+<h1>
+			   <i style="color: #007500;" class="fi fi-rr-hurricane"></i>ABERRATION UNIT</h1>
+			<p style="border-left: 4px solid #007500;" id="ele-info">Aberration units are those Simulacra who are specialized in <span style="color: #007500;">Aberration</span> element and they have <span style="color: #007500;">a unique type of Resonance</span> which you will later learn in Resonance Guide.
+			</p>
+			
+			<h3>
+			   <a style="color: gold;">SSR</a> UNIT
+			</h3>
+		
+			<div onmouseover="play()" onmouseout="stop()" class="row">
 				<div class="column">
-    <img src="tsubasaicon.png">
+    <img src="linicon.png">
 				</div>
-				<div class="column">
-    <img src="cocoicon.png">
-				</div>
-				<div class="column">
-    <img src="friggicon.png">
-			  </div>
-</div>
+			</div>
+				<!--aberration-->
 		</div>
+			<!--audio-->
 		<audio id="myaudio-1">
 	<source src="modern-technology-select.wav"></source>
 </audio>

@@ -9,12 +9,16 @@
   <link href="menu-button.css" rel="stylesheet">
 	<link rel="stylesheet" href="slide-menu.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script src="https://kit.fontawesome.com/5517894d20.js"></script>
+	<script src="index.js" type="text/babel"></script>
+	
 </head>
 	<body>
 		<div class="hero" id="light">
-			<!--html for the side menu-->
-		<div class="menu-btn">
+<div class="menu-btn">
 	   <i class="fas fa-bars"></i>
 	</div>
 	
@@ -47,7 +51,6 @@
 			</ul>
       
 	 </div>
-			<!--below is the html for the top-right nav bar-->
 			<nav>
 				<img src="title.png" class="title"/>
 				<ul id="bar">
@@ -57,10 +60,10 @@
 					<li><a href="">Guides</a></li>
 				</ul>
 				<div>
-					<!--html of the button for dark and light mode-->
 					<button type="button" onclick="togglebtn()" id="btn"><span></span></button>
 				</div>
 			</nav>
+		
 			<div class="text-container" id="text">
 				<h1>
 					Welcome To Fortitude
@@ -86,7 +89,6 @@ text.classList.toggle("text-on");
 			<script>
 				$(document).ready(function() {
     // all custom jQuery will go here
-	  $(document).ready(function(){
 		$('.sub-btn').click(function(){
 		$(this).next('.sub-menu').slideToggle();
 		});
@@ -99,7 +101,6 @@ text.classList.toggle("text-on");
 			$('.menu-btn').css("visibility", "visible") 
 			});
 		});
-					});
 			</script>
 	</body>
 

@@ -77,13 +77,13 @@
 	box-shadow: inset 4px 4px 4px -1px rgba(0,0,0,0.2),
 		inset -4px -4px 6px -1px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(255,255,255,1), 0.5px 0.5px 0px rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05) ;
 }
-h1{
+.icon h1{
 	font-size: 55px;
 	font-weight: 500;
 	margin-top: 30px;
 	width: 100%;
 }
-i{
+.icon i{
 	padding: 0px 15px;
 }
 h3{
@@ -101,7 +101,7 @@ h3{
 
 .column {
   float: left;
-  width: 15%;
+  width: 20%;
   padding: 5px; 
 }
 .row::after {
@@ -111,7 +111,7 @@ h3{
 }
 .column img{
 	transition: border 0.5s;
-	width: 135px;
+	width: 150px;
 	border-radius: 8px;
 	border: 3px solid #fff;
 	box-shadow: inset 4px 4px 4px -1px rgba(0,0,0,0.2),
